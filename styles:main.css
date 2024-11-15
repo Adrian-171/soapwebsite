@@ -1,0 +1,352 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2818
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 :root \{\
+    --primary-color: #2c3e50;\
+    --accent-color: #c9a980;\
+    --light-accent: #f5efe6;\
+    --text-color: #333333;\
+\}\
+\
+/* Reset and Base Styles */\
+* \{\
+    margin: 0;\
+    padding: 0;\
+    box-sizing: border-box;\
+\}\
+\
+body \{\
+    font-family: 'Cormorant Garamond', Georgia, serif;\
+    line-height: 1.8;\
+    margin: 0;\
+    color: var(--text-color);\
+    background-color: #ffffff;\
+\}\
+\
+img \{\
+    max-width: 100%;\
+    height: auto;\
+\}\
+\
+/* Typography */\
+h1, h2, h3 \{\
+    font-family: 'Cormorant Garamond', serif;\
+    font-weight: 300;\
+    letter-spacing: 2px;\
+\}\
+\
+/* Header and Navigation */\
+header \{\
+    background-color: white;\
+    padding: 1.5rem;\
+    position: fixed;\
+    width: 100%;\
+    top: 0;\
+    z-index: 1000;\
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);\
+\}\
+\
+.header-content \{\
+    max-width: 1200px;\
+    margin: 0 auto;\
+    display: flex;\
+    justify-content: space-between;\
+    align-items: center;\
+\}\
+\
+.logo \{\
+    font-size: 1.8rem;\
+    color: var(--primary-color);\
+    text-decoration: none;\
+    font-weight: 300;\
+    letter-spacing: 3px;\
+\}\
+\
+nav \{\
+    display: flex;\
+    gap: 2rem;\
+\}\
+\
+nav a \{\
+    color: var(--primary-color);\
+    text-decoration: none;\
+    font-size: 1rem;\
+    letter-spacing: 1px;\
+    text-transform: uppercase;\
+    padding-bottom: 3px;\
+    border-bottom: 1px solid transparent;\
+    transition: all 0.3s ease;\
+\}\
+\
+nav a:hover \{\
+    border-bottom: 1px solid var(--accent-color);\
+    color: var(--accent-color);\
+\}\
+\
+/* Hero Section */\
+.hero \{\
+    margin-top: 80px;\
+    height: 90vh;\
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/hero-bg.jpg') center/cover;\
+    display: flex;\
+    align-items: center;\
+    justify-content: center;\
+    color: white;\
+    text-align: center;\
+\}\
+\
+.hero-content \{\
+    max-width: 800px;\
+    padding: 2rem;\
+\}\
+\
+.hero h1 \{\
+    font-size: 3.5rem;\
+    margin-bottom: 1rem;\
+    font-weight: 300;\
+\}\
+\
+.hero p \{\
+    font-size: 1.2rem;\
+    line-height: 1.8;\
+    margin-bottom: 2rem;\
+\}\
+\
+/* Buttons */\
+.btn \{\
+    background-color: transparent;\
+    border: 1px solid white;\
+    color: white;\
+    padding: 1rem 2rem;\
+    text-decoration: none;\
+    text-transform: uppercase;\
+    letter-spacing: 2px;\
+    transition: all 0.3s ease;\
+    font-size: 0.9rem;\
+\}\
+\
+.btn:hover \{\
+    background-color: white;\
+    color: var(--primary-color);\
+\}\
+\
+/* Section Styles */\
+.section \{\
+    padding: 6rem 2rem;\
+    max-width: 1200px;\
+    margin: 0 auto;\
+\}\
+\
+.section h2 \{\
+    text-align: center;\
+    font-size: 2.5rem;\
+    margin-bottom: 3rem;\
+    color: var(--primary-color);\
+\}\
+\
+/* Value Props */\
+.value-props \{\
+    display: grid;\
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\
+    gap: 4rem;\
+    text-align: center;\
+    padding: 2rem;\
+\}\
+\
+.value-prop \{\
+    padding: 2rem;\
+    background-color: var(--light-accent);\
+    border-radius: 2px;\
+    transition: transform 0.3s ease;\
+\}\
+\
+.value-prop:hover \{\
+    transform: translateY(-10px);\
+\}\
+\
+.value-prop i \{\
+    font-size: 2.5rem;\
+    color: var(--accent-color);\
+    margin-bottom: 1.5rem;\
+\}\
+\
+/* Products Grid */\
+.products \{\
+    display: grid;\
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));\
+    gap: 3rem;\
+    padding: 2rem;\
+\}\
+\
+.product-card \{\
+    position: relative;\
+    background: white;\
+    padding: 0;\
+    border-radius: 2px;\
+    overflow: hidden;\
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);\
+    transition: all 0.3s ease;\
+\}\
+\
+.product-card:hover \{\
+    transform: translateY(-10px);\
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);\
+\}\
+\
+.product-image \{\
+    position: relative;\
+    height: 300px;\
+    overflow: hidden;\
+\}\
+\
+.product-image img \{\
+    width: 100%;\
+    height: 100%;\
+    object-fit: cover;\
+    transition: transform 0.3s ease;\
+\}\
+\
+.product-card:hover .product-image img \{\
+    transform: scale(1.1);\
+\}\
+\
+.product-details \{\
+    padding: 2rem;\
+    text-align: center;\
+\}\
+\
+.product-details h3 \{\
+    margin: 0;\
+    font-size: 1.5rem;\
+    color: var(--primary-color);\
+\}\
+\
+.price \{\
+    color: var(--accent-color);\
+    font-size: 1.2rem;\
+    margin: 1rem 0;\
+\}\
+\
+/* Value Section */\
+.value-section \{\
+    background-color: white;\
+    padding: 6rem 2rem;\
+    text-align: center;\
+\}\
+\
+.value-content \{\
+    max-width: 800px;\
+    margin: 0 auto;\
+\}\
+\
+.value-list \{\
+    text-align: left;\
+    margin: 2rem auto;\
+    max-width: 600px;\
+    list-style: none;\
+\}\
+\
+.value-list li \{\
+    margin-bottom: 1rem;\
+    padding-left: 1.5rem;\
+    position: relative;\
+\}\
+\
+.value-list li::before \{\
+    content: "\'95";\
+    color: var(--accent-color);\
+    position: absolute;\
+    left: 0;\
+\}\
+\
+/* Contact Form */\
+.contact-section \{\
+    background-color: var(--light-accent);\
+    padding: 6rem 2rem;\
+\}\
+\
+.contact-form \{\
+    max-width: 600px;\
+    margin: 0 auto;\
+    padding: 3rem;\
+    background: white;\
+    border-radius: 2px;\
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);\
+\}\
+\
+input, textarea \{\
+    width: 100%;\
+    padding: 1rem;\
+    margin-bottom: 1.5rem;\
+    border: 1px solid #ddd;\
+    border-radius: 2px;\
+    font-size: 1rem;\
+    transition: all 0.3s ease;\
+\}\
+\
+input:focus, textarea:focus \{\
+    border-color: var(--accent-color);\
+    outline: none;\
+\}\
+\
+button \{\
+    background-color: var(--primary-color);\
+    color: white;\
+    padding: 1rem 2rem;\
+    border: none;\
+    border-radius: 2px;\
+    cursor: pointer;\
+    text-transform: uppercase;\
+    letter-spacing: 2px;\
+    transition: all 0.3s ease;\
+    width: 100%;\
+\}\
+\
+button:hover \{\
+    background-color: var(--accent-color);\
+\}\
+\
+/* Footer */\
+footer \{\
+    background-color: var(--primary-color);\
+    color: white;\
+    text-align: center;\
+    padding: 3rem 2rem;\
+\}\
+\
+footer p \{\
+    margin: 0.5rem 0;\
+    font-size: 0.9rem;\
+    letter-spacing: 1px;\
+\}\
+\
+/* Media Queries */\
+@media (max-width: 768px) \{\
+    .hero h1 \{\
+        font-size: 2.5rem;\
+    \}\
+    \
+    nav \{\
+        display: none;\
+    \}\
+    \
+    .section \{\
+        padding: 4rem 1rem;\
+    \}\
+    \
+    .value-props \{\
+        gap: 2rem;\
+    \}\
+    \
+    .products \{\
+        gap: 2rem;\
+    \}\
+    \
+    .contact-form \{\
+        padding: 2rem;\
+    \}\
+\}}
